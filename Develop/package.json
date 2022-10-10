@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "uuidv1": "^1.6.14"
+    "uuidv1": "1.6.14"
   }
 }
