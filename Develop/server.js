@@ -20,10 +20,15 @@ app.get('*', (req, res) => {
 
 // GET /notes page
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/notes.html'));
+  res.sendFile(path.join(__dirname, '/notes.html'));
 });
 
-
+// GET data from db file to append 
+app.get('/notes', (req, res) => {
+  const dataNotes = fs.readFileSync(path.join(__dirname, './db/db.json'), "utf-8");
+  const parseNotes = JSON.parse(dataNotes);
+  res.json(parseNotes);
+});
 
 
 
