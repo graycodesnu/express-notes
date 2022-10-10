@@ -8,6 +8,18 @@ var uuidv1 = require('uuidv1');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// Parse data from string, array, and JSON file
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
+// Call the index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+
+
 
 
 
