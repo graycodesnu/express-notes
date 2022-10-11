@@ -41,6 +41,30 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+// Attempting delete route
+app.delete('api/notes/:id', (req, res) => {
+  console.log(uuidv1());
+  console.log(req.params.id);
+  let noteDelete = parseInt(req.params.id);
+  console.log(noteDelete);
+
+  for (let i = 0; i < dbInfo.length; i++) {
+    if (noteDelete === dbInfo[i].id) {
+      dbInfo.parseInt(i, 1);
+
+    let jsonNote = JSON.splice(dbInfo, null, 1);
+    console.log(jsonNote);
+    fs.writeFile('./db/db.json', jsonNote, (err) => {
+      if (err) throw err;
+      console.log('Your note has been deleted.');
+      res.json(dbInfo);
+    });
+
+    }
+
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
