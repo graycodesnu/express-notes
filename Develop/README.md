@@ -13,4 +13,4 @@ The goal of this assignment was to create a note-taking app meeting the below cr
 + A user may select a saved note and the title and content of the saved note will appear in the righthand column 
 
 ## Results 
-Overall I found this assignment enjoyable and I was able to leverage many of Week 11's activities in order to complete the functionality needed. I did attempt to complete the bonus DELETE function, but I wasn't able to get it sorted. I believe this had to do with a disconnect between the note's ID and the way I was invoking it. 
+Overall I found this assignment enjoyable and I was able to leverage many of Week 11's activities in order to complete the functionality needed. I did attempt to complete the bonus DELETE function, but I wasn't able to get it sorted. I believe this had to do with a disconnect between the note's ID and the way I was invoking it.
