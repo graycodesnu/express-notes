@@ -39,7 +39,7 @@ app.post('/api/notes', (req, res) => {
 
 // GET the index.html file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'));
+  res.sendFile(path.join(__dirname, './index.html'));
 });
 
 // Attempting delete route
