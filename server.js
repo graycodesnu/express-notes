@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const dbInfo = require('./Develop/db/db.json');
+const dbInfo = require('./db/db.json');
+console.log(dbInfo);
 var uuidv1 = require('uuidv1');
 
 // Port and express setup 

@@ -1,13 +1,1 @@
-[
-  { "title": "Test Title", "text": "Test text" },
-  {
-    "title": "please work",
-    "text": "yay, it's working!",
-    "id": "42f68c20-4987-11ed-8a8a-a3b03558fdfb"
-  },
-  {
-    "title": "wow!",
-    "text": "this is a note!",
-    "id": "50c258c0-4987-11ed-8393-a695f5c59663"
-  }
-]
+[{"title":"Test Title","text":"Test text"},{"title":"please work","text":"yay, it's working!","id":"42f68c20-4987-11ed-8a8a-a3b03558fdfb"},{"title":"wow!","text":"this is a note!","id":"50c258c0-4987-11ed-8393-a695f5c59663"},{"title":"testing again","text":"test now\n","id":"01420050-4b46-11ed-845d-811f9de9d0e2"}]
