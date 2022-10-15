@@ -43,19 +43,21 @@ app.get('*', (req, res) => {
 });
 
 // Attempting delete route
-app.delete('api/notes/:id', (req, res) => {
-  console.log(uuidv1());
+app.delete('api/notes/:id', function (req, res) {
+  console.log(uuidv1())
   console.log(req.params.id);
-  let noteDelete = parseInt(req.params.id);
-  console.log(noteDelete);
+
+  let deletedNote = parseInt(req.params.id);
+  console.log(deletedNote);
 
   for (let i = 0; i < dbInfo.length; i++) {
-    if (noteDelete === dbInfo[i].id) {
-      dbInfo.parseInt(i, 1);
+    if (deletedNote === dbInfo[i].id) {
+      dbInfo.splice(i, 1);
 
-    let jsonNote = JSON.splice(dbInfo, null, 1);
+    let jsonNote = JSON.splice(dbInfo, null, 2);
     console.log(jsonNote);
-    fs.writeFile('./db/db.json', jsonNote, (err) => {
+
+    fs.writeFile('./db/db.json', jsonNote, function (err) {
       if (err) throw err;
       console.log('Your note has been deleted.');
       res.json(dbInfo);

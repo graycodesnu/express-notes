@@ -1,7 +1,7 @@
 # Express Notes
 
 ## Introduction
-This project is a result of our bootcamp's week 11 homework assignment. Students were expected to create a README.md file generator using Node.js The project repository can be found [here](https://github.com/graycodesnu/express-notes) and the deployed link can be found [here]().
+This project is a result of our bootcamp's week 11 homework assignment. Students were expected to create a note-taking app after implementing our own CRUD routes. The project repository can be found [here](https://github.com/graycodesnu/express-notes) and the deployed link can be found [here](https://heroku-express-notes.herokuapp.com/).
 
 ![](/img/Screen%20Shot%202022-10-09%20at%209.53.51%20PM.png)
 
